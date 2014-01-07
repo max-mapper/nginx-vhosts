@@ -1,0 +1,23 @@
+{
+  "name": "nginx-vhosts",
+  "version": "0.0.1",
+  "description": "Programmatically add or remove vhosts to a running Nginx instance",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "author": "max ogden",
+  "license": "BSD",
+  "dependencies": {
+    "nginx-reload": "~0.0.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maxogden/nginx-vhosts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/maxogden/nginx-vhosts/issues"
+  },
+  "homepage": "https://github.com/maxogden/nginx-vhosts"
+}
