@@ -60,7 +60,7 @@ vhosts.write({
 })
 ```
 
-This writes a new configuration file to the configuration directory and then tells Nginx to reload it's configuration. In the above example it would configure Nginx to proxy requests from `test.local` to `localhost:8080`
+This writes a new configuration file to the configuration directory and then tells Nginx to reload its configuration. In the above example it would configure Nginx to proxy requests from `test.local` to `localhost:8080`
 
 You can also supply your own config file:
 
@@ -81,7 +81,7 @@ vhosts.remove('test', function(err, stdout, stderr) {
 })
 ```
 
-This removes a configuration file and tells Nginx to reload it's configuration.
+This removes a configuration file and tells Nginx to reload its configuration.
 
 Note: it may take Nginx a few seconds to finish reloading the configuration after the callback is called.
 
