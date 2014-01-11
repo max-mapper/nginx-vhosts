@@ -25,7 +25,7 @@ Vhosts.prototype.config = function(opts) {
   + '  server 127.0.0.1:' + opts.port + ';\n'
   + '}\n'
   + 'server {\n'
-  + '  listen 80 default_server;\n'
+  + '  listen 80;\n'
   + '  server_name ' + opts.domain + ';\n'
   + '  location / {\n'
   + '    proxy_pass http://' + opts.name + ';\n'
