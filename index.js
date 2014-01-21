@@ -29,6 +29,7 @@ Vhosts.prototype.config = function(opts) {
   + '  server_name ' + opts.domain + ';\n'
   + '  location / {\n'
   + '    proxy_pass http://' + opts.name + ';\n'
+  + '    proxy_set_header X-Forwarded-For $remote_addr;\n'
   + '  }\n'
   + '}\n'
 }
