@@ -14,7 +14,7 @@ function Vhosts(opts, onChange) {
   this.opts = opts || {}
   this.confDir = this.opts.confDir || '/etc/nginx/conf.d/'
   this.onChange = onChange || function noop(){}
-  this.nginx = Reload(this.opts.pidLocation, function (running) {
+  this.nginx = Reload(this.opts, function (running) {
     if (onChange) onChange(running)
   })
 }
