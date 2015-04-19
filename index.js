@@ -12,9 +12,9 @@ function Vhosts(opts, onChange) {
     opts = {}
   }
   this.opts = opts || {}
-  this.confDir = opts.confDir || '/etc/nginx/conf.d/'
+  this.confDir = this.opts.confDir || '/etc/nginx/conf.d/'
   this.onChange = onChange || function noop(){}
-  this.nginx = Reload(opts.pidLocation, function (running) {
+  this.nginx = Reload(this.opts.pidLocation, function (running) {
     if (onChange) onChange(running)
   })
 }
