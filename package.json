@@ -9,7 +9,7 @@
   "author": "max ogden",
   "license": "BSD",
   "dependencies": {
-    "nginx-reload": "~0.0.5"
+    "nginx-reload": "~0.0.6"
   },
   "devDependencies": {},
   "repository": {
