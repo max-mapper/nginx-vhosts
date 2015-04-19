@@ -1,6 +1,6 @@
 {
   "name": "nginx-vhosts",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Programmatically add or remove vhosts to a running Nginx instance",
   "main": "index.js",
   "scripts": {
